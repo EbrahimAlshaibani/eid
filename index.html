@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    body{
+        background-image: url(eid-mubarak-religious-white-background_1017-31582.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @font-face {
+        font-family: "main";
+        src: url(Cairo-Regular.ttf);
+    }
+    *{
+        font-family: "main";
+    }
+.container
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 50px;
+    background-color: rgb(116, 199, 255);
+    border-radius: 20px;
+}
+form{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  font-size: 18px;
+    
+    background-color: rgba(0, 0, 0,0 0);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+::placeholder{
+    text-align: center;
+}
+.button{
+display: inline-block;
+  border-radius: 20px;
+  background-color: #200092;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h1{
+    font-weight: 100;
+}
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+.container2 img
+{
+    border-radius: 20px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+
+
+.container2 h2{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 100;
+}
+
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>أدخل الاسم</h1>
+            <input id="input" type="text" placeholder="الاسم">
+            <button class="button" id="button" onclick="doit()" type="button" style="vertical-align:middle"><span>إنشاء بطاقة </span></button>        </form>
+    </div>
+   
+<div class="container2">
+    <img src="istockphoto-1254844220-170667a.jpg" alt="Snow" style="width:100%;">
+    <div  class="bottom-left"><h2 id="text"></h2></div>
+  </div>
+
+</body>
+<script>
+    function doit()
+    {
+        var text = document.getElementById('text');
+        var input = document.getElementById('input').value;
+        text.innerHTML = input;
+        downl
+    }
+   
+
+</script>
+</html>
